@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Instagram, Linkedin, Mail } from 'lucide-react'
+import { Linkedin, Mail } from 'lucide-react'
 import Logo from './Logo'
 
 export default function Footer() {
@@ -26,17 +26,12 @@ export default function Footer() {
   const socialLinks = [
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/company/ctrl-designco/?viewAsMember=true',
+      href: 'https://www.linkedin.com/in/rishabh-sharma-a54b8ba3/',
       icon: Linkedin,
     },
     {
-      label: 'Instagram',
-      href: 'https://www.instagram.com/ctrldesignco?igsh=ZTBncndxcXI4M2w2',
-      icon: Instagram,
-    },
-    {
       label: 'Email',
-      href: 'mailto:hello.ctrldesignco@gmail.com',
+      href: 'mailto:rishabhshrm24@gmail.com',
       icon: Mail,
     },
   ]
@@ -101,7 +96,7 @@ export default function Footer() {
                     >
                       <Icon size={18} className="mt-0.5 shrink-0" />
                       <span className="min-w-0 break-all">
-                        {link.label === 'Email' ? 'hello.ctrldesignco@gmail.com' : link.label}
+                        {link.label === 'Email' ? 'rishabhshrm24@gmail.com' : link.label}
                       </span>
                     </a>
                   )
@@ -120,14 +115,14 @@ export default function Footer() {
         >
           <div className="border-t border-bg/20 pt-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
             <p className="text-bg/60 text-sm text-center md:text-left">
-              © {currentYear} CTRL Design Co. All rights reserved.
+              © {currentYear}. All rights reserved.
             </p>
             <div className="flex w-full justify-center md:w-auto md:justify-end text-sm">
               <a
-                href="mailto:hello.ctrldesignco@gmail.com"
+                href="mailto:rishabhshrm24@gmail.com"
                 className="max-w-full break-all text-bg/60 hover:text-accent transition-colors"
               >
-                hello.ctrldesignco@gmail.com
+                rishabhshrm24@gmail.com
               </a>
             </div>
           </div>

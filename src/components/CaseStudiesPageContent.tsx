@@ -34,17 +34,6 @@ export default function CaseStudiesPageContent() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-16 max-w-7xl mx-auto text-center mt-12">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
-          <h3 className="font-display text-4xl uppercase tracking-tight mb-4">Ready to improve your product experience?</h3>
-          <p className="text-text/65 mb-8">
-            Let&apos;s discuss your users, product goals, and the UX strategy to get you there.
-          </p>
-          <button className="px-8 py-4 bg-text text-bg rounded-lg font-medium hover:bg-accent hover:text-white transition-all duration-300">
-            Start a Project Brief
-          </button>
-        </motion.div>
-      </section>
     </div>
   )
 }

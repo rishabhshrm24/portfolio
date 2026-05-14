@@ -96,12 +96,6 @@ export default function Home2026() {
                 View Case Studies
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
-              <Link
-                href="#contact"
-                className="surface-elevated inline-flex items-center gap-2 rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-text transition-colors hover:bg-white"
-              >
-                Discuss Your Product
-              </Link>
             </motion.div>
 
             <motion.div

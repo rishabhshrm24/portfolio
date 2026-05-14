@@ -1,8 +1,8 @@
 import ContactPageContent from '@/components/ContactPageContent'
 
 export const metadata = {
-  title: 'Contact Us - CTRL Design Co',
-  description: 'Get in touch with CTRL Design Co. Let\'s discuss your design project and create something amazing together.',
+  title: 'Contact',
+  description: 'Email, phone, and LinkedIn contact details.',
 }
 
 export default function ContactPage() {
