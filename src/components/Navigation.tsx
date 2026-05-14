@@ -11,7 +11,6 @@ export default function Navigation() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '#services' },
     { label: 'Work', href: '/case-studies' },
     { label: 'Contact', href: '/contact' },
   ]
@@ -37,8 +36,8 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item, index) => (
-              <Link key={index} href={item.href} className="hover:underline">
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href} className="hover:underline">
                 {item.label}
               </Link>
             ))}
@@ -59,8 +58,8 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden mt-4">
             <ul className="flex flex-col space-y-4">
-              {navItems.map((item, index) => (
-                <li key={index}>
+              {navItems.map((item) => (
+                <li key={item.href}>
                   <Link href={item.href} className="hover:underline">
                     {item.label}
                   </Link>

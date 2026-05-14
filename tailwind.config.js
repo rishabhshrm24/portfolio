@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-body)', 'sans-serif'],
-        display: ['var(--font-display)', 'sans-serif'],
+        sans: ['var(--font-body)', 'Sora', 'sans-serif'],
+        display: ['var(--font-display)', 'Bebas Neue', 'sans-serif'],
       },
       colors: {
         bg: '#fafafa',

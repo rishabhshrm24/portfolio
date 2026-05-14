@@ -1,14 +1,10 @@
 import ContactPageContent from '@/components/ContactPageContent'
 
 export const metadata = {
-  title: 'Contact - UI UX Designer Portfolio',
-  description: 'Get in touch to discuss UX strategy, interface design, and user-centered product experiences.',
+  title: 'Contact Us - CTRL Design Co',
+  description: 'Get in touch with CTRL Design Co. Let\'s discuss your design project and create something amazing together.',
 }
 
 export default function ContactPage() {
-  return (
-    <div className="dark">
-      <ContactPageContent />
-    </div>
-  )
+  return <ContactPageContent />
 }

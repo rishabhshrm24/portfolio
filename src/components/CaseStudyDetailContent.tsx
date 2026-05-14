@@ -80,8 +80,10 @@ export default function CaseStudyDetailContent({
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div className="order-1 lg:order-2 lg:col-span-8 space-y-16">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-8 bg-gray-50 rounded-2xl">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -314,20 +316,6 @@ export default function CaseStudyDetailContent({
           </motion.div>
         )}
 
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} viewport={{ once: true }}>
-          <h2 className="text-3xl font-bold mb-8">Results & Impact</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {study.results.map((result) => (
-              <motion.div key={result.metric} whileHover={{ y: -5 }}>
-                <div className="p-6 bg-gradient-to-br from-accent/10 to-accent/5 rounded-xl border border-accent/20 h-full">
-                  <p className="text-sm text-gray-600 mb-3">{result.metric}</p>
-                  <p className="text-3xl font-bold text-accent">{result.value}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
         {study.qualitativeFeedback && study.qualitativeFeedback.length > 0 && (
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.42 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-bold mb-6">Qualitative Feedback</h2>
@@ -384,6 +372,34 @@ export default function CaseStudyDetailContent({
             </div>
           </div>
         </motion.div>
+          </div>
+
+          <aside className="order-2 lg:order-1 lg:col-span-4">
+            {study.results && study.results.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="lg:sticky lg:top-28"
+              >
+                <div className="p-6 rounded-2xl bg-white border border-gray-200 shadow-sm">
+                  <h2 className="text-3xl font-bold mb-6">Results &amp; Impact</h2>
+                  <div className="grid grid-cols-2 lg:grid-cols-1 gap-4">
+                    {study.results.map((result) => (
+                      <motion.div key={result.metric} whileHover={{ y: -3 }}>
+                        <div className="p-4 bg-gradient-to-br from-accent/10 to-accent/5 rounded-xl border border-accent/20 h-full">
+                          <p className="text-sm text-gray-600 mb-3">{result.metric}</p>
+                          <p className="text-3xl font-bold text-accent">{result.value}</p>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </aside>
+        </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-12 border-t border-gray-200">
@@ -420,17 +436,6 @@ export default function CaseStudyDetailContent({
         </motion.div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 py-12 text-center">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
-          <h3 className="text-3xl font-bold mb-4">Inspired by our work?</h3>
-          <p className="text-gray-600 mb-8">
-            Let&apos;s discuss how we can create something similar for your brand.
-          </p>
-          <button className="px-8 py-4 bg-text text-bg rounded-lg font-medium hover:bg-accent hover:text-white transition-all duration-300">
-            Start Your Project
-          </button>
-        </motion.div>
-      </section>
     </div>
   )
 }

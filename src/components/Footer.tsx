@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Linkedin, Mail } from 'lucide-react'
+import { Instagram, Linkedin, Mail } from 'lucide-react'
 import Logo from './Logo'
 
 export default function Footer() {
@@ -9,7 +9,6 @@ export default function Footer() {
 
   const footerLinks = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '#services' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Contact', href: '/contact' },
   ]
@@ -27,18 +26,23 @@ export default function Footer() {
   const socialLinks = [
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/rishabh-sharma-a54b8ba3/',
+      href: 'https://www.linkedin.com/company/ctrl-designco/?viewAsMember=true',
       icon: Linkedin,
     },
     {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/ctrldesignco?igsh=ZTBncndxcXI4M2w2',
+      icon: Instagram,
+    },
+    {
       label: 'Email',
-      href: 'mailto:rishabhshrm24@gmail.com',
+      href: 'mailto:hello.ctrldesignco@gmail.com',
       icon: Mail,
     },
   ]
 
   return (
-    <footer className="border-t border-text/10 bg-[#171717] text-[#f4f0e6]">
+    <footer className="bg-text text-bg border-t border-bg/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           variants={containerVariants}
@@ -52,9 +56,9 @@ export default function Footer() {
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             >
               <a href="/" className="block mb-4 w-fit hover:opacity-80 transition-opacity">
-                <Logo className="h-20 w-auto mx-auto" />
+                <Logo className="h-12 w-auto" />
               </a>
-              <p className="text-[#f4f0e6]/70 text-sm">
+              <p className="text-bg/60">
                 Designing bold brands and compelling visual experiences.
               </p>
             </motion.div>
@@ -63,13 +67,13 @@ export default function Footer() {
             <motion.div
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             >
-              <h4 className="mb-4 font-display text-2xl uppercase tracking-wide">Quick Links</h4>
+              <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 {footerLinks.map((link) => (
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-[#f4f0e6]/70 transition-colors hover:text-[#ffd66b]"
+                      className="text-bg/60 hover:text-accent transition-colors"
                     >
                       {link.label}
                     </a>
@@ -82,7 +86,7 @@ export default function Footer() {
             <motion.div
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             >
-              <h4 className="mb-4 font-display text-2xl uppercase tracking-wide">Connect</h4>
+              <h4 className="font-bold mb-4">Connect</h4>
               <div className="space-y-3">
                 {socialLinks.map((link) => {
                   const Icon = link.icon
@@ -93,11 +97,11 @@ export default function Footer() {
                       href={link.href}
                       target={link.href.startsWith('http') ? '_blank' : undefined}
                       rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-                      className="flex items-start gap-3 text-[#f4f0e6]/70 transition-colors hover:text-[#ffd66b]"
+                      className="flex items-start gap-3 text-bg/60 hover:text-accent transition-colors"
                     >
                       <Icon size={18} className="mt-0.5 shrink-0" />
                       <span className="min-w-0 break-all">
-                        {link.label === 'Email' ? 'rishabhshrm24@gmail.com' : link.label}
+                        {link.label === 'Email' ? 'hello.ctrldesignco@gmail.com' : link.label}
                       </span>
                     </a>
                   )
@@ -114,16 +118,16 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col gap-4 border-t border-white/15 pt-8 md:flex-row md:items-center md:justify-between">
-            <p className="text-center text-sm text-[#f4f0e6]/65 md:text-left">
-              © {currentYear}. All rights reserved.
+          <div className="border-t border-bg/20 pt-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+            <p className="text-bg/60 text-sm text-center md:text-left">
+              © {currentYear} CTRL Design Co. All rights reserved.
             </p>
             <div className="flex w-full justify-center md:w-auto md:justify-end text-sm">
               <a
-                href="mailto:rishabhshrm24@gmail.com"
-                className="max-w-full break-all text-[#f4f0e6]/65 transition-colors hover:text-[#ffd66b]"
+                href="mailto:hello.ctrldesignco@gmail.com"
+                className="max-w-full break-all text-bg/60 hover:text-accent transition-colors"
               >
-                rishabhshrm24@gmail.com
+                hello.ctrldesignco@gmail.com
               </a>
             </div>
           </div>

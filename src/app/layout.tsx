@@ -17,8 +17,13 @@ const displayFont = Bebas_Neue({
 })
 
 export const metadata: Metadata = {
-  title: 'CTRL Design Co | Portfolio 2026',
-  description: 'Graphic designer and illustrator portfolio with branding, visual systems, and case studies.',
+  title: 'Rishabh Sharma | Product & UX Design Portfolio',
+  description: 'UX design portfolio showcasing product thinking, user research, and impactful case studies by Rishabh Sharma.',
+  icons: {
+    icon: '/RS logo.png',
+    shortcut: '/RS logo.png',
+    apple: '/RS logo.png',
+  },
 }
 
 export const viewport: Viewport = {
