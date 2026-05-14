@@ -1,0 +1,3 @@
+event: message
+data: {"result":{"content":[{"type":"text","text":"[MCP server] Invalid tool arguments: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"array\",\n    \"path\": [\n      \"clientLanguages\"\n    ],\n    \"message\": \"Expected string, received array\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"array\",\n    \"path\": [\n      \"clientFrameworks\"\n    ],\n    \"message\": \"Expected string, received array\"\n  }\n]"}],"isError":true},"jsonrpc":"2.0","id":2}
+

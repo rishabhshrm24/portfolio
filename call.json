@@ -1,0 +1,1 @@
+﻿{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"get_design_context","arguments":{"nodeId":"0:1","clientLanguages":["typescript"],"clientFrameworks":["nextjs"],"taskType":"understand"}}}

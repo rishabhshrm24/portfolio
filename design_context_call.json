@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"get_design_context","arguments":{"nodeId":"693:406","clientLanguages":"typescript","clientFrameworks":"nextjs","artifactType":"WEB_PAGE_OR_APP_SCREEN","taskType":"CREATE_ARTIFACT"}}}
