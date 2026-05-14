@@ -16,8 +16,8 @@ export default function ContactPageContent() {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Get In Touch</h1>
             <p className="text-lg text-bg/70 max-w-2xl">
-              Have a project in mind or want to collaborate? We'd love to hear from you. 
-              Reach out and let's create something amazing together.
+              Have a project in mind or want to collaborate? We&apos;d love to hear from you. 
+              Reach out and let&apos;s create something amazing together.
             </p>
           </motion.div>
         </div>
