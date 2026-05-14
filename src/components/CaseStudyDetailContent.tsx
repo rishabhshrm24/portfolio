@@ -390,7 +390,7 @@ export default function CaseStudyDetailContent({
                       <motion.div key={result.metric} whileHover={{ y: -3 }}>
                         <div className="p-4 bg-gradient-to-br from-accent/10 to-accent/5 rounded-xl border border-accent/20 h-full">
                           <p className="text-sm text-gray-600 mb-3">{result.metric}</p>
-                          <p className="text-3xl font-bold text-accent">{result.value}</p>
+                          <p className="text-2xl sm:text-3xl font-bold text-accent">{result.value}</p>
                         </div>
                       </motion.div>
                     ))}
